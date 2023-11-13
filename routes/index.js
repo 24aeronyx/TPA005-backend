@@ -7,7 +7,10 @@ const todoRoute = require('./todo-route');
 const verifyToken = require('../middleware/auth');
 
 route.get("/", (req, res) => {
-    res.json("Selamat datang di todo app")
+    res.json({
+        message: "Click link below to see endpoints",
+        link: "https://github.com/24aeronyx/TPA005-backend.git"
+    })
 })
 
 route.use("/auth", authRoute)

@@ -5,13 +5,10 @@ const KEY = "oljhcsaouhbgoq"
 const verifyToken = (req, res, next) => {
   console.log(req)
   const header = req.headers.authorization
-
+  console.log(header)
 
   if (!header) {
-    res.json({
-      message: "undefined header"
-    })
-    return
+    return next();
   }
 
   const token = header.split(" ")[1]
