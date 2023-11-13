@@ -4,7 +4,7 @@ const route = express.Router()
 const { getAllUser, getUserById, addUser } = require('../controllers/user-controller')
 
 route.get("/", getAllUser)
-route.get("/", getUserById)
+route.get("/:id", getUserById)
 route.post("/", addUser)
 route.get("/", )
 
