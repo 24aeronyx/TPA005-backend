@@ -1,9 +1,9 @@
 module.exports = {
   development: {
-    username: "root",
-    password: "",
-    database: "todolist",
-    host: "127.0.0.1",
+    username: "freedb_Aeronyx",
+    password: "dysBq*HacYFP9*2",
+    database: "freedb_todoApp",
+    host: "sql.freedb.tech",
     dialect: "mysql",
   },
   test: {
