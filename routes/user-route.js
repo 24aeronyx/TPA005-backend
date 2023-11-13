@@ -5,7 +5,7 @@ const { getAllUser, getUserById, addUser } = require('../controllers/user-contro
 
 route.get("/", getAllUser)
 route.get("/", getUserById)
-route.get("/", addUser)
+route.post("/", addUser)
 route.get("/", )
 
 module.exports = route
