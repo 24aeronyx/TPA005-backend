@@ -1,8 +1,8 @@
-const { User } = require("../models");
+const { User, Todo } = require("../models");
 
 module.exports = {
   getAllUser: async (req, res) => {
-    const users = await User.findAll({ attributes: { exclude: ["password"] } });
+    const users = await User.findAll({include: Todo});
 
     res.json({
       message: "Berhasil mendapatkan user",
