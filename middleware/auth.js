@@ -8,7 +8,10 @@ const verifyToken = (req, res, next) => {
   console.log(header)
 
   if (!header) {
-    return next();
+    res.json({
+      message: "undefined header",
+    });
+    return;
   }
 
   const token = header.split(" ")[1]
